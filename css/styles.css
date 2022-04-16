@@ -1,0 +1,864 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 980px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  min-height: 100px;
+  background-color: #323333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 136px;
+  height: 75px;
+  background-image: url("../images/logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+nav p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f57220;
+}
+nav .links {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f57220;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f57220;
+}
+nav .links a {
+  color: white;
+  text-decoration: none;
+}
+nav .links span {
+  color: #f57220;
+  margin: 0 20px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #323333;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+footer .logo {
+  height: 75px;
+  width: 110px;
+  background-image: url("../images/logo.jpg");
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+footer .text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer .icons {
+  font-size: larger;
+}
+
+.about {
+  width: 980px;
+}
+.about .page-header {
+  background-color: #323333;
+  color: #f57220;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 50px;
+}
+.about .pagedescrip {
+  padding: 7px;
+  text-align: center;
+  font-size: 25px;
+}
+.about .about-info {
+  color: #f57220;
+  background-color: #323333;
+}
+.about .about-header {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.about .about-content {
+  background-color: #323333;
+  color: #f57220;
+  padding: 3px;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.about .about-content .about-img {
+  min-height: 300px;
+  background-color: red;
+  max-width: 980px;
+  background-image: url("../images/about/aboutbanner.jfif");
+  background-position: center;
+  background-size: cover;
+}
+.about .about-para {
+  background-color: #323333;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.about .about-para p {
+  width: 50%;
+  color: #f57220;
+  margin: 0 15px;
+}
+.about .about-para .building-image {
+  height: 200px;
+  width: 50%;
+  background-image: url("../images/about/demo.jpg");
+  background-size: cover;
+}
+
+.banner {
+  max-width: 980px;
+  height: 200px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.banner header {
+  position: absolute;
+  top: 53px;
+  left: 416px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+.banner p {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #f57220;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+
+.tour-wrapper {
+  max-width: 980px;
+  min-height: 400px;
+  margin: 48px auto 0 auto;
+}
+.tour-wrapper .tour-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+.tour-wrapper .tour-row .tour1 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/israel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour1 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour1 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour1 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour2 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/usa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour2 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour2 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour2 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour3 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/australia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour3 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour3 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour3 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour4 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/nz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour4 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour4 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour4 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour5 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/france.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour5 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour5 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour5 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour6 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/egypt.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour6 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour6 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour6 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour7 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/japan.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour7 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour7 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour7 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour8 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/canada.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour8 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour8 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour8 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour9 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/uae.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour9 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour9 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour9 button {
+  background-color: #323333;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.destination .banner-israel {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/israelbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-israel header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-israel p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-america {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/americabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-america header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-america p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-australia {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/australiabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-australia header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-australia p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-canada {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/canadabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-canada header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-canada p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-egypt {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/egyptbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-egypt header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-egypt p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-france {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/francebanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-france header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-france p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-japan {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/japanbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-japan header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-japan p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-nz {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/nzbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-nz header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-nz p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-uae {
+  max-width: 980px;
+  height: 413px;
+  background-color: #323333;
+  background-image: url("../images/banners/uaebanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-uae header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-uae p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .days .day {
+  margin-bottom: 70px;
+}
+.destination .days .day h1 {
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 60px;
+  margin-bottom: -10px;
+  margin-top: 29px;
+}
+.destination .days .day hr {
+  width: 111px;
+  background-color: black;
+  border: 1px solid;
+  margin-bottom: 37px;
+}
+
+.home {
+  width: 980px;
+}
+.home .page-header {
+  background-color: #323333;
+  color: #f57220;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 50px;
+}
+.home .pagedescrip {
+  padding: 7px;
+  text-align: center;
+  font-size: 25px;
+}
+.home .home-info {
+  color: #f57220;
+  background-color: #323333;
+}
+.home .new-game-header {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.home .new-game-content {
+  background-color: #323333;
+  color: #f57220;
+  padding: 3px;
+  width: 1000px;
+  display: flex;
+}
+.home .new-game-content .new-game-img {
+  height: 200px;
+  width: 900px;
+  margin: auto 30px;
+}
+.home .new-game-content .new-game-img img {
+  max-height: 100%;
+}
+
+.contact {
+  width: 980px;
+}
+
+/*# sourceMappingURL=styles.css.map */

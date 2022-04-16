@@ -1,0 +1,89 @@
+@mixin promo($bgcolor: #faebd7, $hi: 304px){
+    height:$hi;
+    width: 235px;
+    background-color: $bgcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin box($url:"#")
+{
+    width: 236px;
+    height: 304px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+
+    h3{
+        color:white;
+        font-size: 50px;
+        margin: 37px auto 0 auto;
+        text-decoration: none;
+        font-family: proxima-nova-extra-condensed, sans-serif;;
+    }
+
+    p{
+        color:white;
+        font-size: 30px;
+        margin: 0 auto;
+        font-family: proxima-nova-extra-condensed, sans-serif;
+    }
+
+    button
+    {
+        background-color: $common-background;
+        margin-top: 57px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        padding: 7px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
+
+@mixin dest-banner($url:"#")
+{
+    max-width: $content-width;
+        height: 413px;
+        background-color: $common-background;
+        background-image: url($url);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:auto;
+        margin: 50px auto 0 auto;
+        position: relative;
+        
+        
+        header{
+            position:absolute;
+            top:30px;
+            left:18px;
+            font-family: proxima-nova-extra-condensed, sans-serif;
+            font-size: 80px;
+            color: white;
+            text-align: center;
+        }
+    
+        p{
+            position:absolute;
+            top: 269px;
+            left:283px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            width: 714px;
+            height: 50px;
+        }
+}

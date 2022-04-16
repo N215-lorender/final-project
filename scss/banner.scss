@@ -1,0 +1,35 @@
+.banner{
+    max-width: $content-width;
+    height: 200px;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto 0 auto;
+    position: relative;
+    
+    
+    header{
+        position:absolute;
+        top:53px;
+        left:416px;
+        font-family: proxima-nova-extra-condensed, sans-serif;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+    }
+
+    p{
+        position:absolute;
+        top: 70px;
+        left: 0px;
+        font-weight: bold;
+        font-size: 40px;
+        color: $common-orange;
+        text-align: center;
+        margin: 0 auto;
+        width: 714px;
+        height: 50px;
+    }
+    
+}
