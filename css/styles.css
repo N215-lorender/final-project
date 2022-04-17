@@ -9,16 +9,6 @@ body {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 16px;
-}
-
 #app {
   max-width: 980px;
   margin: 0 auto;
@@ -86,6 +76,70 @@ nav .nav-body hr {
 footer {
   width: 100%;
   height: 455px;
+  background-color: #EE4367;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .footer-logo {
+  margin-top: 36px;
+  height: 42px;
+  width: 109px;
+  background-image: url("../images/logo/logo-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .contact-info {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 46px;
+  font-family: "Gill Sans", "Gill Sans Regular", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+footer .subscribe-input {
+  margin-bottom: 30px;
+}
+footer .subscribe-input .subscribe-email {
+  width: 529px;
+  height: 60px;
+  border: none;
+  background-color: #F56B88;
+  padding-left: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer .subscribe-input .subscribe-button {
+  height: 60px;
+  width: 127px;
+  margin-left: -10px;
+  background-color: white;
+  border: none;
+  color: #EE4367;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+footer .icons {
+  min-height: 32px;
+}
+footer .icons .facebook {
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/social-media/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::placeholder {
+  color: white;
+  opacity: 50%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .banner {

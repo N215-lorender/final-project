@@ -1,4 +1,79 @@
 footer {
     width: 100%;
     height: 455px;
+    background-color: $common-red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $common-white;
+
+    .footer-logo {
+        margin-top: 36px;
+        height: 42px;
+        width: 109px;
+
+        background-image: url("../images/logo/logo-white.svg");
+        background-position: center;
+        // background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 46px;
+        font-family: 'Gill Sans', 'Gill Sans Regular', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+
+    .subscribe-input {
+        margin-bottom: 30px;
+
+        .subscribe-email {
+            width: 529px;
+            height: 60px;
+            border: none;
+            background-color: #F56B88;
+            padding-left: 10px;
+            color: $common-white;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .subscribe-button {
+            height: 60px;
+            width: 127px;
+            margin-left: -10px;
+            background-color: $common-white;
+            border: none;
+            color: $common-red;
+            font-size: 16px;
+            //TODO: Figure out why this group of fonts hate me.
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+
+    .icons {
+        min-height: 32px;
+
+        .facebook {
+            background-color: white; //TODO: Figure out why local icons don't work.
+            height: 32px;
+            width: 32px;
+            background-image: url("../images/social-media/facebook.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+::placeholder {
+    color: $common-white;
+    opacity: 50%;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
