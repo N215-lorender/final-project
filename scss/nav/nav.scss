@@ -1,3 +1,80 @@
 nav {
+    background-color: $common-yellow;
     max-width: $content-width;
+    padding: 10px 0;
+    margin: 30px auto;
+
+    .nav-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+
+        // background-color: red;
+
+
+        .nav-logo {
+            height: 42px;
+            width: 109px;
+            margin-left: -8px;
+
+            background-position: center;
+            // background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .links a {
+            text-decoration: none;
+            font-family: 'Gill Sans Regular', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+
+        hr {
+            width: $content-width;
+            border: 1px black solid;
+        }
+    }
+}
+
+.white {
+    .nav-logo {
+        background-image: url("../images/logo/logo-white.svg");
+    }
+
+    .nav-body {
+        color: $common-white;
+
+        a {
+            color: $common-white;
+            text-decoration: none;
+        }
+    }
+
+    hr {
+        border: 1px white solid;
+        background-color: white;
+    }
+}
+
+.black {
+    .nav-logo {
+        background-image: url("../images/logo/logo-black.svg");
+    }
+
+    .nav-body {
+        color: $common-black;
+
+        a {
+            color: $common-black;
+            text-decoration: none;
+        }
+    }
+
+    hr {
+        border: 1px black solid;
+        background-color: black;
+    }
 }
