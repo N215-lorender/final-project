@@ -1,0 +1,44 @@
+.head-space {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba($common-yellow, .8), rgba($common-yellow, .8)), url("../images/home-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -145px;
+    padding: 145px;
+
+    .header-text-wrapper {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            font-family: 'PT Serif';
+            font-size: 40px;
+            color: $common-white;
+        }
+
+        .subheader {
+            color: $common-red;
+            font-family: standard;
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 48px;
+        }
+
+        .altheader {
+            font-family: standard;
+            font-style: italic;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .header-button {
+            @include button(122px, 40px);
+        }
+    }
+
+}

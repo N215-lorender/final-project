@@ -1,9 +1,52 @@
-@mixin header-text($linesize: 40px) {}
+@mixin header-text($linesize: 40px, $color: $common-black) {
+    font-size: 25px;
+    font-family: standard;
+    color: $color;
 
-@mixin button($width, $height, $link) {}
+    hr {
+        margin-top: 11px;
+        width: $linesize;
+        border: 1px $color solid;
+        background-color: $color;
+    }
+}
+
+@mixin button($width, $height, $button-color:$common-red, $text-color:$common-white) {
+    height: $height;
+    width: $width;
+    margin-left: -10px;
+    background-color: $button-color;
+    border: none;
+    color: $text-color;
+    font-size: 16px;
+    font-family: standard;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 @mixin image($width, $height, $overlay-color) {}
 
-@mixin date-block($height, $width) {}
+@mixin date-block($height:60px, $width:60px) {
+    height: $height;
+    width: $width;
+    background-color: $common-red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    .day {
+        margin-top: 8px;
+        font-size: 22px;
+        font-family: standard;
+        font-family: bold;
+    }
+
+    .month {
+        font-size: 12px;
+        font-family: standard;
+        font-weight: lighter;
+    }
+}
 
 @mixin banner($url:"#") {}

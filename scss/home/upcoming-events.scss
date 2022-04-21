@@ -1,0 +1,45 @@
+.upcoming-events {
+    width: 100%;
+    min-height: 320px;
+    padding: 0 40px;
+    padding-top: 48px;
+
+    background-color: $common-purple;
+
+    .events-header {
+        @include header-text(392px, $common-white);
+        margin-bottom: 35px;
+    }
+
+    .events-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+
+        .event {
+            display: flex;
+
+            .date-block {
+                @include date-block();
+                margin-right: 20px;
+            }
+
+            .event-text {
+                width: 140px;
+
+                .event-title {
+                    color: $common-white;
+                    font-size: 15px;
+                    font-family: standard;
+                    margin-bottom: 5px;
+                }
+
+                .event-desc {
+                    color: $common-red;
+                    font-size: 13px;
+                    font-family: standard;
+                }
+
+            }
+        }
+    }
+}

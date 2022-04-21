@@ -1,3 +1,11 @@
+@font-face {
+  font-family: standard;
+  src: url(../fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: header-font;
+  src: url(../fonts/SquarePeg-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +18,15 @@ body {
 }
 
 #app {
-  max-width: 980px;
   margin: 0 auto;
 }
 
 nav {
-  background-color: #FFD140;
+  position: relative;
   max-width: 980px;
   padding: 10px 0;
   margin: 30px auto;
+  z-index: 99;
 }
 nav .nav-body {
   display: flex;
@@ -83,8 +91,9 @@ footer {
   color: white;
 }
 footer .footer-logo {
-  margin-top: 36px;
-  height: 42px;
+  margin-top: 38px;
+  margin-left: -8px;
+  height: 52px;
   width: 109px;
   background-image: url("../images/logo/logo-white.svg");
   background-position: center;
@@ -94,7 +103,7 @@ footer .contact-info {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 46px;
-  font-family: "Gill Sans", "Gill Sans Regular", Calibri, "Trebuchet MS", sans-serif;
+  font-family: standard;
   font-size: 16px;
 }
 footer .subscribe-input {
@@ -108,31 +117,33 @@ footer .subscribe-input .subscribe-email {
   padding-left: 10px;
   color: white;
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Font-face;
 }
 footer .subscribe-input .subscribe-button {
   height: 60px;
-  width: 127px;
+  width: 167px;
   margin-left: -10px;
   background-color: white;
   border: none;
   color: #EE4367;
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: standard;
   font-weight: bold;
-  letter-spacing: 1px;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
 footer .icons {
   min-height: 32px;
+  max-width: 125px;
+  margin-bottom: 45px;
+  color: white;
+  font-size: 32px;
 }
-footer .icons .facebook {
-  background-color: white;
-  height: 32px;
-  width: 32px;
-  background-image: url("../images/social-media/facebook.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+footer .copyright {
+  font-size: 12px;
+  font-family: standard;
+  color: white;
+  opacity: 50%;
 }
 
 ::placeholder {
@@ -142,8 +153,186 @@ footer .icons .facebook {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.banner {
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-space {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../images/home-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -145px;
+  padding: 145px;
+}
+.head-space .header-text-wrapper {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head-space .header-text-wrapper .header {
+  font-family: "PT Serif";
+  font-size: 40px;
+  color: white;
+}
+.head-space .header-text-wrapper .subheader {
+  color: #EE4367;
+  font-family: standard;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 48px;
+}
+.head-space .header-text-wrapper .altheader {
+  font-family: standard;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 48px;
+}
+.head-space .header-text-wrapper .header-button {
+  height: 40px;
+  width: 122px;
+  margin-left: -10px;
+  background-color: #EE4367;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: standard;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quote {
+  background-color: white;
+  max-width: 790px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.quote .quote-text {
+  margin-top: 77px;
+  color: #FFD140;
+  font-family: standard;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 19px;
+}
+.quote .quote-name {
+  color: #EE4367;
+  font-size: 15px;
+  font-family: "PT Serif";
+}
+.quote .quote-title {
+  font-size: 10px;
+  font-family: "PT Serif";
+  color: #A8A8A8;
+}
+
+.upcoming-events {
+  width: 100%;
+  min-height: 320px;
+  padding: 0 40px;
+  padding-top: 48px;
+  background-color: #540D6E;
+}
+.upcoming-events .events-header {
+  font-size: 25px;
+  font-family: standard;
+  color: white;
+  margin-bottom: 35px;
+}
+.upcoming-events .events-header hr {
+  margin-top: 11px;
+  width: 392px;
+  border: 1px white solid;
+  background-color: white;
+}
+.upcoming-events .events-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.upcoming-events .events-wrapper .event {
+  display: flex;
+}
+.upcoming-events .events-wrapper .event .date-block {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+.upcoming-events .events-wrapper .event .date-block .day {
+  margin-top: 8px;
+  font-size: 22px;
+  font-family: standard;
+  font-family: bold;
+}
+.upcoming-events .events-wrapper .event .date-block .month {
+  font-size: 12px;
+  font-family: standard;
+  font-weight: lighter;
+}
+.upcoming-events .events-wrapper .event .event-text {
+  width: 140px;
+}
+.upcoming-events .events-wrapper .event .event-text .event-title {
+  color: white;
+  font-size: 15px;
+  font-family: standard;
+  margin-bottom: 5px;
+}
+.upcoming-events .events-wrapper .event .event-text .event-desc {
+  color: #EE4367;
+  font-size: 13px;
+  font-family: standard;
+}
+
+.about-header {
+  margin-top: 60px;
+}
+.about-header .header-image {
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../images/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+}
+.about-header .header-text {
+  font-size: 25px;
+  font-family: standard;
+  color: black;
+  margin-top: -25px;
+  margin-bottom: 37px;
+}
+.about-header .header-text hr {
+  margin-top: 11px;
+  width: 229px;
+  border: 1px black solid;
+  background-color: black;
+}
+
+.about {
   max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 95px;
+}
+.about .about-text {
+  font-family: standard;
+  font-size: 16px;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=styles.css.map */

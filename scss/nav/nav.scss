@@ -1,8 +1,9 @@
 nav {
-    background-color: $common-yellow;
+    position: relative;
     max-width: $content-width;
     padding: 10px 0;
     margin: 30px auto;
+    z-index: 99;
 
     .nav-body {
         display: flex;
@@ -10,9 +11,7 @@ nav {
         align-items: center;
         margin-bottom: 20px;
 
-
         // background-color: red;
-
 
         .nav-logo {
             height: 42px;
@@ -23,8 +22,6 @@ nav {
             // background-size: cover;
             background-repeat: no-repeat;
         }
-
-
 
         .links a {
             text-decoration: none;

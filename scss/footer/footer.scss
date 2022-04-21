@@ -8,8 +8,9 @@ footer {
     color: $common-white;
 
     .footer-logo {
-        margin-top: 36px;
-        height: 42px;
+        margin-top: 38px;
+        margin-left: -8px;
+        height: 52px;
         width: 109px;
 
         background-image: url("../images/logo/logo-white.svg");
@@ -22,7 +23,7 @@ footer {
         text-align: center;
         margin-top: 45px;
         margin-bottom: 46px;
-        font-family: 'Gill Sans', 'Gill Sans Regular', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: standard;
         font-size: 16px;
     }
 
@@ -37,36 +38,29 @@ footer {
             padding-left: 10px;
             color: $common-white;
             font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: Font-face;
         }
 
         .subscribe-button {
-            height: 60px;
-            width: 127px;
-            margin-left: -10px;
-            background-color: $common-white;
-            border: none;
-            color: $common-red;
-            font-size: 16px;
-            //TODO: Figure out why this group of fonts hate me.
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
+            @include button(167px, 60px, $common-white, $common-red);
+            letter-spacing: 2px;
         }
     }
 
     .icons {
         min-height: 32px;
+        max-width: 125px;
+        margin-bottom: 45px;
+        color: $common-white;
 
-        .facebook {
-            background-color: white; //TODO: Figure out why local icons don't work.
-            height: 32px;
-            width: 32px;
-            background-image: url("../images/social-media/facebook.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        font-size: 32px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        font-family: standard;
+        color: $common-white;
+        opacity: 50%;
     }
 }
 

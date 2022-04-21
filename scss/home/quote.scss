@@ -1,0 +1,29 @@
+.quote {
+    background-color: $common-white;
+    max-width: 790px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    .quote-text {
+        margin-top: 77px;
+        color: $common-yellow;
+        font-family: standard;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 19px;
+    }
+
+    .quote-name {
+        color: $common-red;
+        font-size: 15px;
+        font-family: 'PT Serif';
+    }
+
+    .quote-title {
+        font-size: 10px;
+        font-family: 'PT Serif';
+        color: #A8A8A8;
+    }
+}

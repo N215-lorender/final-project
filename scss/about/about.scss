@@ -1,0 +1,12 @@
+.about {
+    max-width: $content-width;
+    margin: 0 auto;
+    margin-bottom: 95px;
+
+    .about-text {
+        font-family: standard;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: italic;
+    }
+}
