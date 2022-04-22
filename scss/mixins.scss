@@ -24,7 +24,14 @@
     cursor: pointer;
 }
 
-@mixin image($width, $height, $overlay-color) {}
+@mixin image($width, $height, $overlay-color, $image-path) {
+    height: $height;
+    width: $width;
+    background-image: linear-gradient(rgba($overlay-color, .8), rgba($overlay-color, .8)), url($image-path);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @mixin date-block($height:60px, $width:60px) {
     height: $height;

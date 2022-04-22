@@ -1,0 +1,14 @@
+.gallery {
+    width: $content-width;
+    margin: 0 auto;
+
+    .gallery-header {
+        margin-top: 34px;
+        @include header-text(229px);
+    }
+
+    .gallery-images-wrapper {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
