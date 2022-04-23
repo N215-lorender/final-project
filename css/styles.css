@@ -279,7 +279,7 @@ footer .copyright {
   margin-top: 8px;
   font-size: 22px;
   font-family: standard;
-  font-family: bold;
+  font-weight: bold;
 }
 .upcoming-events .events-wrapper .event .date-block .month {
   font-size: 12px;
@@ -419,6 +419,80 @@ footer .copyright {
 }
 .gallery-row .r2i2:hover {
   cursor: pointer;
+}
+
+.blog {
+  width: 980px;
+  margin: 0 auto;
+}
+.blog .blog-header {
+  font-size: 25px;
+  font-family: standard;
+  color: black;
+}
+.blog .blog-header hr {
+  margin-top: 11px;
+  width: 229px;
+  border: 1px black solid;
+  background-color: black;
+}
+.blog .blog-wrapper {
+  margin-top: 31px;
+  margin-bottom: 56px;
+}
+.blog .blog-wrapper .blog-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.blog-bit {
+  display: flex;
+  margin-right: 60px;
+}
+.blog-bit .date-block {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+.blog-bit .date-block .day {
+  margin-top: 8px;
+  font-size: 22px;
+  font-family: standard;
+  font-weight: bold;
+}
+.blog-bit .date-block .month {
+  font-size: 12px;
+  font-family: standard;
+  font-weight: lighter;
+}
+.blog-bit .blog-bit-content {
+  width: 380px;
+}
+.blog-bit .blog-bit-content .blog-bit-image {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.blog-bit .blog-bit-content .blog-bit-title {
+  color: black;
+  font-size: 15px;
+  font-family: standard;
+  margin-bottom: 11px;
+}
+.blog-bit .blog-bit-content .blog-bit-desc {
+  color: #EE4367;
+  font-size: 13px;
+  font-family: standard;
 }
 
 /*# sourceMappingURL=styles.css.map */
