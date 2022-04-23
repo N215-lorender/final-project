@@ -139,6 +139,9 @@ footer .icons {
   color: white;
   font-size: 32px;
 }
+footer .fa-brands:hover {
+  cursor: pointer;
+}
 footer .copyright {
   font-size: 12px;
   font-family: standard;
@@ -370,6 +373,9 @@ footer .copyright {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.gallery-row .r1i1:hover {
+  cursor: pointer;
+}
 .gallery-row .r1i2 {
   height: 187px;
   width: 187px;
@@ -377,6 +383,9 @@ footer .copyright {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.gallery-row .r1i2:hover {
+  cursor: pointer;
 }
 .gallery-row .r1i3 {
   height: 187px;
@@ -386,6 +395,9 @@ footer .copyright {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.gallery-row .r1i3:hover {
+  cursor: pointer;
+}
 .gallery-row .r2i1 {
   height: 306px;
   width: 603px;
@@ -394,6 +406,9 @@ footer .copyright {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.gallery-row .r2i1:hover {
+  cursor: pointer;
+}
 .gallery-row .r2i2 {
   height: 306px;
   width: 355px;
@@ -401,6 +416,9 @@ footer .copyright {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.gallery-row .r2i2:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

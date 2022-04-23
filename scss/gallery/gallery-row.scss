@@ -7,21 +7,42 @@
     .r1i1 {
         @include image(489px, 187px, $common-yellow, "../images/gallery/1.png");
 
+
+    }
+
+    .r1i1:hover {
+        cursor: pointer;
     }
 
     .r1i2 {
         @include image(187px, 187px, $common-red, "../images/gallery/2.jpeg");
     }
 
+    .r1i2:hover {
+        cursor: pointer;
+    }
+
     .r1i3 {
         @include image(265px, 187px, $common-green, "../images/gallery/3.jpg");
+    }
+
+    .r1i3:hover {
+        cursor: pointer;
     }
 
     .r2i1 {
         @include image(603px, 306px, $common-purple, "../images/gallery/4.jpg");
     }
 
+    .r2i1:hover {
+        cursor: pointer;
+    }
+
     .r2i2 {
         @include image(355px, 306px, $common-blue, "../images/gallery/5.png");
+    }
+
+    .r2i2:hover {
+        cursor: pointer;
     }
 }
