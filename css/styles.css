@@ -180,6 +180,7 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .head-space .header-text-wrapper .header {
   font-family: "PT Serif";
@@ -259,7 +260,7 @@ footer .copyright {
 }
 .upcoming-events .events-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .upcoming-events .events-wrapper .event {
   display: flex;

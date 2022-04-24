@@ -4,8 +4,8 @@ var homeContent = `<div class="home">
   <div class="header-text-wrapper">
     <p class="header">Header goes here</p>
     <p class="subheader">Less important text here</p>
-    <p class="altheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugiat aliquid minus nemo sed
-      est.</p><button class="header-button">Read More</button>
+    <p class="altheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquid minus nemo sed
+      est.</p><button onclick="window.location.href = '#about'" class="header-button">Read More</button>
   </div>
 </div>
 <div class="quote">
@@ -197,5 +197,17 @@ var contactContent = `<div class="contact">
 
 //Take a pgName from app.js and SCREEEEEE
 export function modelPageName(pgName) {
-    $("#app").html(eval(pgName));
+    if (pgName == "homeContent") {
+        $("nav").removeClass("black").addClass("white");
+    }
+    else {
+        $("nav").removeClass("white").addClass("black");
+    }
+
+    try {
+        $("#app").html(eval(pgName));
+    }
+    catch (e) {
+        console.log("No")
+    }
 }
