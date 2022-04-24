@@ -177,7 +177,22 @@ var blogContent = `
   </div>
 </div>
 </div>`;
-var contactContent = ``;
+var contactContent = `<div class="contact">
+<div class="contact-header">
+  CONTACT US:
+  <hr>
+</div>
+<div class="contact-wrapper">
+  <div class="contact-fields">
+    <input type="text" class="field-name" placeholder="Your name...">
+    <input type="email" class="field-email" placeholder="Email Address...">
+    <input type="text" class="field-company" placeholder="Company...">
+    <textarea class="field-msg" placeholder="Message..."></textarea>
+    <button class="contact-send-button">SEND MESSAGE</button>
+  </div>
+  <div class="contact-map"></div>
+</div>
+</div>`;
 
 
 //Take a pgName from app.js and SCREEEEEE
