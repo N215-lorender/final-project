@@ -122,7 +122,6 @@ footer .subscribe-input .subscribe-email {
 footer .subscribe-input .subscribe-button {
   height: 60px;
   width: 167px;
-  margin-left: -10px;
   background-color: white;
   border: none;
   color: #EE4367;
@@ -131,6 +130,7 @@ footer .subscribe-input .subscribe-button {
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 2px;
+  margin-left: -10px;
 }
 footer .icons {
   min-height: 32px;
@@ -203,7 +203,6 @@ footer .copyright {
 .head-space .header-text-wrapper .header-button {
   height: 40px;
   width: 122px;
-  margin-left: -10px;
   background-color: #EE4367;
   border: none;
   color: white;
@@ -493,6 +492,110 @@ footer .copyright {
   color: #EE4367;
   font-size: 13px;
   font-family: standard;
+}
+
+.contact {
+  width: 980px;
+  margin: 0 auto;
+}
+.contact .contact-header {
+  font-size: 25px;
+  font-family: standard;
+  color: black;
+  margin-bottom: 66px;
+}
+.contact .contact-header hr {
+  margin-top: 11px;
+  width: 229px;
+  border: 1px black solid;
+  background-color: black;
+}
+.contact .contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.contact .contact-wrapper .contact-fields {
+  display: flex;
+  flex-direction: column;
+  width: 529px;
+}
+.contact .contact-wrapper .contact-fields .field-name {
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 21px;
+  border: none;
+  background-color: #d8d8d8;
+  padding-left: 10px;
+  color: black;
+  opacity: 50%;
+  font-size: 16px;
+  font-family: standard;
+}
+.contact .contact-wrapper .contact-fields .field-email {
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 21px;
+  border: none;
+  background-color: #d8d8d8;
+  padding-left: 10px;
+  color: black;
+  opacity: 50%;
+  font-size: 16px;
+  font-family: standard;
+}
+.contact .contact-wrapper .contact-fields .field-company {
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 21px;
+  border: none;
+  background-color: #d8d8d8;
+  padding-left: 10px;
+  color: black;
+  opacity: 50%;
+  font-size: 16px;
+  font-family: standard;
+}
+.contact .contact-wrapper .contact-fields .field-msg {
+  height: 199px;
+  max-width: 100%;
+  margin-bottom: 21px;
+  border: none;
+  background-color: #d8d8d8;
+  padding-left: 10px;
+  color: black;
+  opacity: 50%;
+  font-size: 16px;
+  font-family: standard;
+  padding-top: 10px;
+}
+.contact .contact-wrapper .contact-fields .contact-send-button {
+  height: 60px;
+  width: 168px;
+  background-color: #EE4367;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: standard;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.contact .contact-wrapper .contact-map {
+  width: 400px;
+  height: 442px;
+  background-image: url("../images/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+::placeholder {
+  color: black;
+  opacity: 75%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

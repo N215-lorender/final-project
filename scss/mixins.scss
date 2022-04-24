@@ -14,7 +14,7 @@
 @mixin button($width, $height, $button-color:$common-red, $text-color:$common-white) {
     height: $height;
     width: $width;
-    margin-left: -10px;
+
     background-color: $button-color;
     border: none;
     color: $text-color;
@@ -54,6 +54,19 @@
         font-family: standard;
         font-weight: lighter;
     }
+}
+
+@mixin input-field($height:60px) {
+    height: $height;
+    max-width: 100%;
+    margin-bottom: 21px;
+    border: none;
+    background-color: #d8d8d8;
+    padding-left: 10px;
+    color: $common-black;
+    opacity: 50%;
+    font-size: 16px;
+    font-family: standard;
 }
 
 @mixin banner($url:"#") {}
