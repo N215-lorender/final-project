@@ -1,5 +1,5 @@
 .contact {
-    width: $content-width;
+    max-width: $content-width;
     margin: 0 auto;
 
     .contact-header {
@@ -11,7 +11,11 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 90px;
+
+        @media only screen and (max-width: $content-width) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .contact-fields {
             display: flex;
@@ -35,11 +39,6 @@
                 @include input-field(199px);
                 padding-top: 10px;
             }
-
-            .contact-send-button {
-                @include button(168px, 60px);
-                letter-spacing: 2px;
-            }
         }
 
         .contact-map {
@@ -49,6 +48,20 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
+            @media only screen and (max-width: $content-width) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .contact-send-button {
+        @include button(168px, 60px);
+        letter-spacing: 2px;
+        margin-bottom: 90px;
+
+        @media only screen and (max-width: $content-width) {
+            margin: 0 auto;
         }
     }
 }

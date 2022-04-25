@@ -75,3 +75,15 @@ footer {
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@media only screen and (max-width: $content-width) {
+    .subscribe-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .subscribe-button {
+            margin: 0;
+        }
+    }
+}

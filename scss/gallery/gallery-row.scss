@@ -6,8 +6,6 @@
 
     .r1i1 {
         @include image(489px, 187px, $common-yellow, "../images/gallery/1.png");
-
-
     }
 
     .r1i1:hover {
@@ -44,5 +42,14 @@
 
     .r2i2:hover {
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: $content-width) {
+    .gallery-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
     }
 }

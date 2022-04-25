@@ -22,7 +22,7 @@ var homeContent = `<div class="home">
   </div>
   <div class="events-wrapper">
     <div class="event">
-      <div class="date-block">
+      <div class="home-date-block">
         <div class="day">06</div>
         <div class="month">JUN</div>
       </div>
@@ -33,7 +33,7 @@ var homeContent = `<div class="home">
       </div>
     </div>
     <div class="event">
-      <div class="date-block">
+      <div class="home-date-block">
         <div class="day">30</div>
         <div class="month">JUN</div>
       </div>
@@ -44,7 +44,7 @@ var homeContent = `<div class="home">
       </div>
     </div>
     <div class="event">
-      <div class="date-block">
+      <div class="home-date-block">
         <div class="day">30</div>
         <div class="month">AUG</div>
       </div>
@@ -55,7 +55,7 @@ var homeContent = `<div class="home">
       </div>
     </div>
     <div class="event">
-      <div class="date-block">
+      <div class="home-date-block">
         <div class="day">23</div>
         <div class="month">NOV</div>
       </div>
@@ -66,7 +66,7 @@ var homeContent = `<div class="home">
       </div>
     </div>
     <div class="event">
-      <div class="date-block">
+      <div class="home-date-block">
         <div class="day">23</div>
         <div class="month">DEC</div>
       </div>
@@ -99,84 +99,84 @@ var galleryContent = `<div class="gallery">
 </div>`;
 var blogContent = `
 <div class="blog">
-<div class="blog-header">
-  BLOG:
-  <hr>
-</div>
-<div class="blog-wrapper">
-  <div class="blog-row">
-    <div class="blog-bit">
-      <div class="date-block">
-        <div class="day">06</div>
-        <div class="month">JUN</div>
+      <div class="blog-header">
+        BLOG:
+        <hr>
       </div>
-      <div class="blog-bit-content">
-        <div class="blog-bit-image"></div>
-        <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
-        <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. </div>
+      <div class="blog-wrapper">
+        <div class="blog-row">
+          <div class="blog-bit">
+            <div class="bit-date-block" onclick="window.location.href = '#event1'">
+              <div class="day">06</div>
+              <div class="month">JUN</div>
+            </div>
+            <div class="blog-bit-content">
+              <div class="blog-bit-image"></div>
+              <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
+              <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. </div>
+            </div>
+          </div>
+          <div class="blog-bit">
+            <div class="bit-date-block" onclick="window.location.href = '#event2'">
+              <div class="day">30</div>
+              <div class="month">JUL</div>
+            </div>
+            <div class="blog-bit-content">
+              <div class="blog-bit-image"></div>
+              <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
+              <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-row">
+          <div class="blog-bit">
+            <div class="bit-date-block" onclick="window.location.href = '#event3'">
+              <div class="day">30</div>
+              <div class="month">AUG</div>
+            </div>
+            <div class="blog-bit-content">
+              <div class="blog-bit-image"></div>
+              <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
+              <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. </div>
+            </div>
+          </div>
+          <div class="blog-bit">
+            <div class="bit-date-block" onclick="window.location.href = '#event4'">
+              <div class="day">23</div>
+              <div class="month">NOV</div>
+            </div>
+            <div class="blog-bit-content">
+              <div class="blog-bit-image"></div>
+              <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
+              <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-row">
+          <div class="blog-bit">
+            <div class="bit-date-block" onclick="window.location.href = '#event5'">
+              <div class="day">23</div>
+              <div class="month">DEC</div>
+            </div>
+            <div class="blog-bit-content">
+              <div class="blog-bit-image"></div>
+              <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
+              <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="blog-bit">
-      <div class="date-block">
-        <div class="day">30</div>
-        <div class="month">JUL</div>
-      </div>
-      <div class="blog-bit-content">
-        <div class="blog-bit-image"></div>
-        <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
-        <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. </div>
-      </div>
-    </div>
-  </div>
-  <div class="blog-row">
-    <div class="blog-bit">
-      <div class="date-block">
-        <div class="day">30</div>
-        <div class="month">AUG</div>
-      </div>
-      <div class="blog-bit-content">
-        <div class="blog-bit-image"></div>
-        <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
-        <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. </div>
-      </div>
-    </div>
-    <div class="blog-bit">
-      <div class="date-block">
-        <div class="day">23</div>
-        <div class="month">NOV</div>
-      </div>
-      <div class="blog-bit-content">
-        <div class="blog-bit-image"></div>
-        <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
-        <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. </div>
-      </div>
-    </div>
-  </div>
-  <div class="blog-row">
-    <div class="blog-bit">
-      <div class="date-block">
-        <div class="day">23</div>
-        <div class="month">DEC</div>
-      </div>
-      <div class="blog-bit-content">
-        <div class="blog-bit-image"></div>
-        <div class="blog-bit-title">Sed et persipiatis unde omnis iste natus</div>
-        <div class="blog-bit-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>`;
+    </div>`;
 var contactContent = `<div class="contact">
 <div class="contact-header">
   CONTACT US:

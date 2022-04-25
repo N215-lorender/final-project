@@ -2,7 +2,12 @@
     display: flex;
     margin-right: 60px;
 
-    .date-block {
+    @media only screen and (max-width: $content-width) {
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    .bit-date-block {
         @include date-block();
         margin-right: 20px;
     }
@@ -35,4 +40,8 @@
 
 
     }
+}
+
+.bit-date-block:hover {
+    cursor: pointer;
 }

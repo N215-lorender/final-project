@@ -18,7 +18,7 @@
         .event {
             display: flex;
 
-            .date-block {
+            .home-date-block {
                 @include date-block();
                 margin-right: 20px;
             }
@@ -40,6 +40,21 @@
                 }
 
             }
+        }
+    }
+}
+
+.home-date-block:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: $content-width) {
+    .events-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .event {
+            margin-bottom: 15px;
         }
     }
 }

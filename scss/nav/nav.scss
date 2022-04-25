@@ -29,6 +29,12 @@ nav {
             font-size: 15px;
         }
 
+        span {
+            color: $common-red;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
         hr {
             width: $content-width;
             border: 1px black solid;

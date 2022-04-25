@@ -1,3 +1,20 @@
+@media only screen and (max-width: $content-width) {
+  .home {
+    .quote {
+      padding: 0 20px;
+    }
+  }
+
+  .blog,
+  .gallery,
+  .gallery-page,
+  .blog-page,
+  .contact,
+  .about {
+    padding: 20px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +32,6 @@ body {
   margin: 0 auto;
   // min-height: 200px;
   // background-color: yellow;
+
+
 }

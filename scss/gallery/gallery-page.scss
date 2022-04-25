@@ -1,5 +1,5 @@
 .gallery-page {
-    width: $content-width;
+    max-width: $content-width;
     margin: 0 auto;
 
     .gallery1-banner {
@@ -33,6 +33,10 @@
             .gallery-banner-heading {
                 margin-left: 50px;
                 font-size: 115px;
+
+                @media only screen and (max-width: $content-width) {
+                    font-size: 58px;
+                }
             }
         }
     }
@@ -44,11 +48,16 @@
             .gallery-banner-heading {
                 margin-left: 50px;
                 font-size: 115px;
+
+                @media only screen and (max-width: $content-width) {
+                    font-size: 58px;
+                }
             }
         }
     }
 
     .gallery-page-text-wrapper {
+
         display: flex;
         justify-content: space-between;
         font-family: standard;
@@ -69,6 +78,11 @@
             min-height: 133px;
         }
     }
+}
 
-
+@media only screen and (max-width: $content-width) {
+    .gallery-page-text-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }
