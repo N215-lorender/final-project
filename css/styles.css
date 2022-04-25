@@ -117,7 +117,7 @@ footer .subscribe-input .subscribe-email {
   padding-left: 10px;
   color: white;
   font-size: 16px;
-  font-family: Font-face;
+  font-family: standard;
 }
 footer .subscribe-input .subscribe-button {
   height: 60px;
@@ -149,7 +149,7 @@ footer .copyright {
   opacity: 50%;
 }
 
-::placeholder {
+.subscribe-email::placeholder {
   color: white;
   opacity: 50%;
   font-size: 16px;
@@ -419,6 +419,182 @@ footer .copyright {
 }
 .gallery-row .r2i2:hover {
   cursor: pointer;
+}
+
+.gallery-page {
+  width: 980px;
+  margin: 0 auto;
+}
+.gallery-page .gallery1-banner {
+  position: relative;
+  height: 400px;
+  max-width: 980px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.6), rgba(255, 209, 64, 0.6)), url("../images/gallery/1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.gallery-page .gallery1-banner .gallery-banner-text {
+  position: absolute;
+  bottom: -69px;
+  display: flex;
+  align-items: baseline;
+  font-family: standard;
+  color: #FFD140;
+  text-shadow: 5px 5px 35px black;
+  width: 100%;
+}
+.gallery-page .gallery1-banner .gallery-banner-text .gallery-banner-number {
+  vertical-align: bottom;
+  font-size: 300px;
+}
+.gallery-page .gallery1-banner .gallery-banner-text .gallery-banner-heading {
+  width: 700px;
+  font-size: 140px;
+}
+.gallery-page .gallery2-banner {
+  position: relative;
+  height: 400px;
+  max-width: 980px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.6), rgba(238, 67, 103, 0.6)), url("../images/gallery/2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.gallery-page .gallery2-banner .gallery-banner-text {
+  position: absolute;
+  bottom: -69px;
+  display: flex;
+  align-items: baseline;
+  font-family: standard;
+  color: #EE4367;
+  text-shadow: 5px 5px 35px black;
+  width: 100%;
+}
+.gallery-page .gallery2-banner .gallery-banner-text .gallery-banner-number {
+  vertical-align: bottom;
+  font-size: 300px;
+}
+.gallery-page .gallery2-banner .gallery-banner-text .gallery-banner-heading {
+  width: 700px;
+  font-size: 140px;
+}
+.gallery-page .gallery2-banner .gallery-banner-text .gallery-banner-heading {
+  margin-left: 36px;
+}
+.gallery-page .gallery3-banner {
+  position: relative;
+  height: 400px;
+  max-width: 980px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.6), rgba(8, 173, 105, 0.6)), url("../images/gallery/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.gallery-page .gallery3-banner .gallery-banner-text {
+  position: absolute;
+  bottom: -69px;
+  display: flex;
+  align-items: baseline;
+  font-family: standard;
+  color: #08AD69;
+  text-shadow: 5px 5px 35px black;
+  width: 100%;
+}
+.gallery-page .gallery3-banner .gallery-banner-text .gallery-banner-number {
+  vertical-align: bottom;
+  font-size: 300px;
+}
+.gallery-page .gallery3-banner .gallery-banner-text .gallery-banner-heading {
+  width: 700px;
+  font-size: 140px;
+}
+.gallery-page .gallery3-banner .gallery-banner-text .gallery-banner-heading {
+  margin-left: 32px;
+}
+.gallery-page .gallery4-banner {
+  position: relative;
+  height: 400px;
+  max-width: 980px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.6), rgba(84, 13, 110, 0.6)), url("../images/gallery/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.gallery-page .gallery4-banner .gallery-banner-text {
+  position: absolute;
+  bottom: -69px;
+  display: flex;
+  align-items: baseline;
+  font-family: standard;
+  color: #540D6E;
+  text-shadow: 5px 5px 35px black;
+  width: 100%;
+}
+.gallery-page .gallery4-banner .gallery-banner-text .gallery-banner-number {
+  vertical-align: bottom;
+  font-size: 300px;
+}
+.gallery-page .gallery4-banner .gallery-banner-text .gallery-banner-heading {
+  width: 700px;
+  font-size: 140px;
+}
+.gallery-page .gallery4-banner .gallery-banner-text .gallery-banner-heading {
+  margin-left: 50px;
+  font-size: 115px;
+}
+.gallery-page .gallery5-banner {
+  position: relative;
+  height: 400px;
+  max-width: 980px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.6), rgba(59, 206, 171, 0.6)), url("../images/gallery/5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.gallery-page .gallery5-banner .gallery-banner-text {
+  position: absolute;
+  bottom: -69px;
+  display: flex;
+  align-items: baseline;
+  font-family: standard;
+  color: #3BCEAB;
+  text-shadow: 5px 5px 35px black;
+  width: 100%;
+}
+.gallery-page .gallery5-banner .gallery-banner-text .gallery-banner-number {
+  vertical-align: bottom;
+  font-size: 300px;
+}
+.gallery-page .gallery5-banner .gallery-banner-text .gallery-banner-heading {
+  width: 700px;
+  font-size: 140px;
+}
+.gallery-page .gallery5-banner .gallery-banner-text .gallery-banner-heading {
+  margin-left: 50px;
+  font-size: 115px;
+}
+.gallery-page .gallery-page-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: standard;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 73px;
+}
+.gallery-page .gallery-page-text-wrapper .col1 {
+  max-width: 490px;
+  min-height: 133px;
+}
+.gallery-page .gallery-page-text-wrapper .col2 {
+  max-width: 451px;
+  min-height: 133px;
 }
 
 .blog {

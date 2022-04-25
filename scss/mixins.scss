@@ -69,4 +69,36 @@
     font-family: standard;
 }
 
-@mixin banner($url:"#") {}
+@mixin gallery-banner($color, $url) {
+    position: relative;
+    height: 400px;
+    max-width: 980px;
+    background-image: linear-gradient(rgba($color, .6), rgba($color, .6)), url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+    .gallery-banner-text {
+        position: absolute;
+        bottom: -69px;
+        display: flex;
+        align-items: baseline;
+        font-family: standard;
+        color: $color;
+        text-shadow: 5px 5px 35px $common-black;
+        width: 100%;
+
+
+        .gallery-banner-number {
+            vertical-align: bottom;
+            font-size: 300px;
+
+        }
+
+        .gallery-banner-heading {
+            width: 700px;
+            font-size: 140px;
+        }
+    }
+}

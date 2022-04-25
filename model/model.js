@@ -194,6 +194,109 @@ var contactContent = `<div class="contact">
 </div>
 </div>`;
 
+var event1Content = ``;
+var event2Content = ``;
+var event3Content = ``;
+var event4Content = ``;
+var event5Content = ``;
+
+
+var gallery1Content = `<div class="gallery-page">
+<div class="gallery1-banner">
+  <div class="gallery-banner-text">
+    <div class="gallery-banner-number">1.</div>
+    <div class="gallery-banner-heading">food festival</div>
+  </div>
+</div>
+<div class="gallery-page-text-wrapper">
+  <p class="col1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+    qui ratione voluptatem sequi nesciunt. </p>
+  <p class="col2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+    sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var gallery2Content = `<div class="gallery-page">
+<div class="gallery2-banner">
+  <div class="gallery-banner-text">
+    <div class="gallery-banner-number">2.</div>
+    <div class="gallery-banner-heading">dee-jay</div>
+  </div>
+</div>
+<div class="gallery-page-text-wrapper">
+  <p class="col1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+    qui ratione voluptatem sequi nesciunt. </p>
+  <p class="col2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+    sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var gallery3Content = `<div class="gallery-page">
+<div class="gallery3-banner">
+  <div class="gallery-banner-text">
+    <div class="gallery-banner-number">3.</div>
+    <div class="gallery-banner-heading">speech</div>
+  </div>
+</div>
+<div class="gallery-page-text-wrapper">
+  <p class="col1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+    qui ratione voluptatem sequi nesciunt. </p>
+  <p class="col2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+    sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var gallery4Content = `<div class="gallery-page">
+<div class="gallery4-banner">
+  <div class="gallery-banner-text">
+    <div class="gallery-banner-number">4.</div>
+    <div class="gallery-banner-heading">open foodfest</div>
+  </div>
+</div>
+<div class="gallery-page-text-wrapper">
+  <p class="col1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+    qui ratione voluptatem sequi nesciunt. </p>
+  <p class="col2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+    sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var gallery5Content = `<div class="gallery-page">
+<div class="gallery5-banner">
+  <div class="gallery-banner-text">
+    <div class="gallery-banner-number">5.</div>
+    <div class="gallery-banner-heading">international</div>
+  </div>
+</div>
+<div class="gallery-page-text-wrapper">
+  <p class="col1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+    qui ratione voluptatem sequi nesciunt. </p>
+  <p class="col2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+    sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+
 
 //Take a pgName from app.js and SCREEEEEE
 export function modelPageName(pgName) {

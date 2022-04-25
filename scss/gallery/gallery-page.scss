@@ -1,0 +1,74 @@
+.gallery-page {
+    width: $content-width;
+    margin: 0 auto;
+
+    .gallery1-banner {
+        @include gallery-banner($common-yellow, "../images/gallery/1.png");
+    }
+
+    .gallery2-banner {
+        @include gallery-banner($common-red, "../images/gallery/2.jpeg");
+
+        .gallery-banner-text {
+            .gallery-banner-heading {
+                margin-left: 36px;
+            }
+        }
+    }
+
+    .gallery3-banner {
+        @include gallery-banner($common-green, "../images/gallery/3.jpg");
+
+        .gallery-banner-text {
+            .gallery-banner-heading {
+                margin-left: 32px;
+            }
+        }
+    }
+
+    .gallery4-banner {
+        @include gallery-banner($common-purple, "../images/gallery/4.jpg");
+
+        .gallery-banner-text {
+            .gallery-banner-heading {
+                margin-left: 50px;
+                font-size: 115px;
+            }
+        }
+    }
+
+    .gallery5-banner {
+        @include gallery-banner($common-blue, "../images/gallery/5.png");
+
+        .gallery-banner-text {
+            .gallery-banner-heading {
+                margin-left: 50px;
+                font-size: 115px;
+            }
+        }
+    }
+
+    .gallery-page-text-wrapper {
+        display: flex;
+        justify-content: space-between;
+        font-family: standard;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 16px;
+        margin-bottom: 73px;
+
+        .col1 {
+            max-width: 490px;
+            min-height: 133px;
+
+
+        }
+
+        .col2 {
+            max-width: 451px;
+            min-height: 133px;
+        }
+    }
+
+
+}
