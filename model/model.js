@@ -194,11 +194,106 @@ var contactContent = `<div class="contact">
 </div>
 </div>`;
 
-var event1Content = ``;
-var event2Content = ``;
-var event3Content = ``;
-var event4Content = ``;
-var event5Content = ``;
+var event1Content = `<div class="blog-page">
+<div class="blog-page-banner">
+  <div class="date-block">
+    <div class="day">06</div>
+    <div class="month">JUN</div>
+  </div>
+</div>
+<div class="blog-page-content-wrapper">
+  <div class="blog-page-header">Header #1:</div>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <div class="blog-page-header">Header #2:</div>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var event2Content = `<div class="blog-page">
+<div class="blog-page-banner">
+  <div class="date-block">
+    <div class="day">30</div>
+    <div class="month">JUL</div>
+  </div>
+</div>
+<div class="blog-page-content-wrapper">
+  <div class="blog-page-header">Header #1:</div>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <div class="blog-page-header">Header #2:</div>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var event3Content = `<div class="blog-page">
+<div class="blog-page-banner">
+  <div class="date-block">
+    <div class="day">30</div>
+    <div class="month">AUG</div>
+  </div>
+</div>
+<div class="blog-page-content-wrapper">
+  <div class="blog-page-header">Header #1:</div>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <div class="blog-page-header">Header #2:</div>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var event4Content = `<div class="blog-page">
+<div class="blog-page-banner">
+  <div class="date-block">
+    <div class="day">23</div>
+    <div class="month">NOV</div>
+  </div>
+</div>
+<div class="blog-page-content-wrapper">
+  <div class="blog-page-header">Header #1:</div>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <div class="blog-page-header">Header #2:</div>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
+var event5Content = `<div class="blog-page">
+<div class="blog-page-banner">
+  <div class="date-block">
+    <div class="day">23</div>
+    <div class="month">DEC</div>
+  </div>
+</div>
+<div class="blog-page-content-wrapper">
+  <div class="blog-page-header">Header #1:</div>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <div class="blog-page-header">Header #2:</div>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</div>
+</div>`;
 
 
 var gallery1Content = `<div class="gallery-page">

@@ -1,0 +1,49 @@
+.blog-page {
+    max-width: $content-width;
+    height: 100%;
+    margin: 0 auto;
+
+    .blog-page-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        max-width: 981px;
+        background-image: linear-gradient(rgba($common-red, .6), rgba($common-red, .6)), url("../images/blog.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .date-block {
+            @include date-block(155px, 155px);
+
+            .day {
+                margin-top: 22px;
+                font-size: 55px;
+            }
+
+            .month {
+                font-size: 31px;
+            }
+        }
+    }
+
+    .blog-page-content-wrapper {
+        margin-bottom: 151px;
+
+        .blog-page-header {
+            margin-top: 57px;
+            color: $common-red;
+            font-family: standard;
+            font-size: 20px;
+        }
+
+        p {
+            font-family: standard;
+            font-size: 20px;
+            font-weight: lighter;
+            max-width: 856px;
+            margin-top: 30px;
+        }
+    }
+}
